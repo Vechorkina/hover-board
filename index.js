@@ -1,6 +1,6 @@
 const board = document.querySelector("#board");
-const colors = ["red", "blue", "green", "yellow", "purple"];
-const SQUARES_NUMBER = 500;
+const colors = ['#30cfd0', '#330867',  '#d299c2', '#fef9d7', 'rgb(236, 124, 73)', 'rgb(200, 102, 223)', 'rgb(37, 227, 43)'];
+const SQUARES_NUMBER = 600;
 
 for (let i = 0; i < SQUARES_NUMBER; i++) {
   const square = document.createElement("div");
@@ -23,7 +23,7 @@ function removeColor(element) {
 }
 
 function getRandomColor() {
-  const index = Math.floor(Math.random() + colors.length);
+  const index = Math.floor(Math.random() * colors.length);
   return colors[index];
 }
 /* 00 */
